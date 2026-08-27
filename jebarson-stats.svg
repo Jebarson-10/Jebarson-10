@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 495 195">
+  <defs>
+    <linearGradient id="stats-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#161b22"/>
+    </linearGradient>
+    <filter id="stats-glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="495" height="195" fill="url(#stats-bg)" rx="10"/>
+  <rect width="495" height="195" fill="none" stroke="#58a6ff" stroke-width="1" rx="10" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.5;0.3" dur="3s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Title -->
+  <text x="25" y="35" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="bold" fill="#58a6ff" filter="url(#stats-glow)">
+    Jebarson's GitHub Stats ⚡
+  </text>
+
+  <!-- Stats items with count-up animation feel -->
+  <g transform="translate(25, 60)">
+    <!-- Stars -->
+    <text y="10" font-family="'Segoe UI', Arial, sans-serif" font-size="14" fill="#8b949e">⭐ Total Stars Earned:</text>
+    <text x="220" y="10" font-family="'Segoe UI', Arial, sans-serif" font-size="14" fill="#e6edf3" font-weight="bold">
+      <animate attributeName="opacity" values="0;1" dur="0.8s" fill="freeze"/>
+      —
+    </text>
+
+    <!-- Commits -->
+    <text y="38" font-family="'Segoe UI', Arial, sans-serif" font-size="14" fill="#8b949e">🔥 Total Commits:</text>
+    <text x="220" y="38" font-family="'Segoe UI', Arial, sans-serif" font-size="14" fill="#e6edf3" font-weight="bold">
+      <animate attributeName="opacity" values="0;1" dur="1.2s" fill="freeze"/>
+      —
+    </text>
+
+    <!-- PRs -->
+    <text y="66" font-family="'Segoe UI', Arial, sans-serif" font-size="14" fill="#8b949e">🔀 Total PRs:</text>
+    <text x="220" y="66" font-family="'Segoe UI', Arial, sans-serif" font-size="14" fill="#e6edf3" font-weight="bold">
+      <animate attributeName="opacity" values="0;1" dur="1.6s" fill="freeze"/>
+      —
+    </text>
+
+    <!-- Issues -->
+    <text y="94" font-family="'Segoe UI', Arial, sans-serif" font-size="14" fill="#8b949e">🐛 Total Issues:</text>
+    <text x="220" y="94" font-family="'Segoe UI', Arial, sans-serif" font-size="14" fill="#e6edf3" font-weight="bold">
+      <animate attributeName="opacity" values="0;1" dur="2s" fill="freeze"/>
+      —
+    </text>
+
+    <!-- Contributed to -->
+    <text y="122" font-family="'Segoe UI', Arial, sans-serif" font-size="14" fill="#8b949e">📦 Contributed to:</text>
+    <text x="220" y="122" font-family="'Segoe UI', Arial, sans-serif" font-size="14" fill="#e6edf3" font-weight="bold">
+      <animate attributeName="opacity" values="0;1" dur="2.4s" fill="freeze"/>
+      —
+    </text>
+  </g>
+
+  <!-- Rank circle -->
+  <circle cx="420" cy="110" r="40" fill="none" stroke="#58a6ff" stroke-width="3" opacity="0.3"/>
+  <circle cx="420" cy="110" r="40" fill="none" stroke="#58a6ff" stroke-width="3" stroke-dasharray="251" stroke-dashoffset="251" stroke-linecap="round">
+    <animate attributeName="stroke-dashoffset" values="251;60" dur="2s" fill="freeze"/>
+  </circle>
+  <text x="420" y="105" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="14" fill="#8b949e">Rank</text>
+  <text x="420" y="125" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="20" fill="#58a6ff" font-weight="bold">A+</text>
+</svg>

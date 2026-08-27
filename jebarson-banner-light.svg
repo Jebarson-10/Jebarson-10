@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300">
+  <defs>
+    <linearGradient id="bg-light" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f6f8fa"/>
+      <stop offset="50%" style="stop-color:#ffffff"/>
+      <stop offset="100%" style="stop-color:#f6f8fa"/>
+    </linearGradient>
+    <filter id="glow-light">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="300" fill="url(#bg-light)" rx="15"/>
+
+  <!-- Animated grid lines -->
+  <g opacity="0.06">
+    <line x1="0" y1="50" x2="900" y2="50" stroke="#0969da" stroke-width="0.5"/>
+    <line x1="0" y1="100" x2="900" y2="100" stroke="#0969da" stroke-width="0.5"/>
+    <line x1="0" y1="150" x2="900" y2="150" stroke="#0969da" stroke-width="0.5"/>
+    <line x1="0" y1="200" x2="900" y2="200" stroke="#0969da" stroke-width="0.5"/>
+    <line x1="0" y1="250" x2="900" y2="250" stroke="#0969da" stroke-width="0.5"/>
+    <line x1="100" y1="0" x2="100" y2="300" stroke="#0969da" stroke-width="0.5"/>
+    <line x1="200" y1="0" x2="200" y2="300" stroke="#0969da" stroke-width="0.5"/>
+    <line x1="300" y1="0" x2="300" y2="300" stroke="#0969da" stroke-width="0.5"/>
+    <line x1="400" y1="0" x2="400" y2="300" stroke="#0969da" stroke-width="0.5"/>
+    <line x1="500" y1="0" x2="500" y2="300" stroke="#0969da" stroke-width="0.5"/>
+    <line x1="600" y1="0" x2="600" y2="300" stroke="#0969da" stroke-width="0.5"/>
+    <line x1="700" y1="0" x2="700" y2="300" stroke="#0969da" stroke-width="0.5"/>
+    <line x1="800" y1="0" x2="800" y2="300" stroke="#0969da" stroke-width="0.5"/>
+  </g>
+
+  <!-- Floating particles -->
+  <circle cx="80" cy="60" r="2" fill="#0969da" opacity="0.3">
+    <animate attributeName="cy" values="60;40;60" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="200" cy="230" r="1.5" fill="#0969da" opacity="0.25">
+    <animate attributeName="cy" values="230;210;230" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="750" cy="80" r="2.5" fill="#1a7f37" opacity="0.3">
+    <animate attributeName="cy" values="80;55;80" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="650" cy="240" r="1.8" fill="#8250df" opacity="0.3">
+    <animate attributeName="cy" values="240;220;240" dur="2.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="350" cy="45" r="1.2" fill="#cf222e" opacity="0.25">
+    <animate attributeName="cy" values="45;30;45" dur="3.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="500" cy="260" r="2" fill="#bf8700" opacity="0.25">
+    <animate attributeName="cy" values="260;240;260" dur="4.2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Code bracket decorations -->
+  <text x="50" y="150" font-family="monospace" font-size="60" fill="#0969da" opacity="0.1">
+    {
+    <animate attributeName="opacity" values="0.1;0.2;0.1" dur="4s" repeatCount="indefinite"/>
+  </text>
+  <text x="820" y="150" font-family="monospace" font-size="60" fill="#0969da" opacity="0.1">
+    }
+    <animate attributeName="opacity" values="0.1;0.2;0.1" dur="4s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Main heading -->
+  <text x="450" y="100" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="42" font-weight="bold" fill="#24292f" filter="url(#glow-light)">
+    Hi, I'm Jebarson 👋
+    <animate attributeName="opacity" values="0;1" dur="1s" fill="freeze"/>
+  </text>
+
+  <!-- Subtitle -->
+  <text x="450" y="145" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="22" fill="#0969da">
+    ⚡ Full Stack Developer ⚡
+    <animate attributeName="opacity" values="0;1" dur="1.5s" fill="freeze"/>
+  </text>
+
+  <!-- Tech stack -->
+  <text x="450" y="190" text-anchor="middle" font-family="monospace" font-size="14" fill="#1a7f37" opacity="0.9">
+    JavaScript • React • Node.js • Python • TypeScript • Next.js • SQL • Java
+    <animate attributeName="opacity" values="0;0.9" dur="2s" fill="freeze"/>
+  </text>
+
+  <!-- Animated underline -->
+  <line x1="180" y1="200" x2="720" y2="200" stroke="#0969da" stroke-width="2" opacity="0.3">
+    <animate attributeName="x1" values="450;180" dur="1.5s" fill="freeze"/>
+    <animate attributeName="x2" values="450;720" dur="1.5s" fill="freeze"/>
+  </line>
+
+  <!-- Tagline -->
+  <text x="450" y="240" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="15" fill="#57606a" font-style="italic">
+    "Building the future, one commit at a time 🚀"
+    <animate attributeName="opacity" values="0;1" dur="2.5s" fill="freeze"/>
+  </text>
+
+  <!-- Animated cursor blink -->
+  <rect x="730" y="225" width="2" height="18" fill="#0969da">
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Border -->
+  <rect width="900" height="300" fill="none" stroke="#0969da" stroke-width="1" rx="15" opacity="0.15">
+    <animate attributeName="opacity" values="0.15;0.3;0.15" dur="3s" repeatCount="indefinite"/>
+  </rect>
+</svg>

@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 195">
+  <defs>
+    <linearGradient id="langs-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#161b22"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="350" height="195" fill="url(#langs-bg)" rx="10"/>
+  <rect width="350" height="195" fill="none" stroke="#58a6ff" stroke-width="1" rx="10" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.5;0.3" dur="3s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Title -->
+  <text x="25" y="35" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="bold" fill="#58a6ff">
+    Most Used Languages 💻
+  </text>
+
+  <!-- Language bars with growing animation -->
+  <!-- JavaScript -->
+  <text x="25" y="65" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#e6edf3">JavaScript</text>
+  <rect x="130" y="54" width="0" height="14" rx="7" fill="#f1e05a" opacity="0.8">
+    <animate attributeName="width" values="0;170" dur="1s" fill="freeze"/>
+  </rect>
+  <text x="310" y="65" font-family="monospace" font-size="11" fill="#8b949e">
+    35%
+    <animate attributeName="opacity" values="0;1" dur="1s" fill="freeze"/>
+  </text>
+
+  <!-- Python -->
+  <text x="25" y="90" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#e6edf3">Python</text>
+  <rect x="130" y="79" width="0" height="14" rx="7" fill="#3572A5" opacity="0.8">
+    <animate attributeName="width" values="0;120" dur="1.2s" fill="freeze"/>
+  </rect>
+  <text x="310" y="90" font-family="monospace" font-size="11" fill="#8b949e">
+    25%
+    <animate attributeName="opacity" values="0;1" dur="1.2s" fill="freeze"/>
+  </text>
+
+  <!-- TypeScript -->
+  <text x="25" y="115" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#e6edf3">TypeScript</text>
+  <rect x="130" y="104" width="0" height="14" rx="7" fill="#2b7489" opacity="0.8">
+    <animate attributeName="width" values="0;95" dur="1.4s" fill="freeze"/>
+  </rect>
+  <text x="310" y="115" font-family="monospace" font-size="11" fill="#8b949e">
+    20%
+    <animate attributeName="opacity" values="0;1" dur="1.4s" fill="freeze"/>
+  </text>
+
+  <!-- Java -->
+  <text x="25" y="140" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#e6edf3">Java</text>
+  <rect x="130" y="129" width="0" height="14" rx="7" fill="#b07219" opacity="0.8">
+    <animate attributeName="width" values="0;50" dur="1.6s" fill="freeze"/>
+  </rect>
+  <text x="310" y="140" font-family="monospace" font-size="11" fill="#8b949e">
+    10%
+    <animate attributeName="opacity" values="0;1" dur="1.6s" fill="freeze"/>
+  </text>
+
+  <!-- SQL -->
+  <text x="25" y="165" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#e6edf3">SQL</text>
+  <rect x="130" y="154" width="0" height="14" rx="7" fill="#e38c00" opacity="0.8">
+    <animate attributeName="width" values="0;50" dur="1.8s" fill="freeze"/>
+  </rect>
+  <text x="310" y="165" font-family="monospace" font-size="11" fill="#8b949e">
+    10%
+    <animate attributeName="opacity" values="0;1" dur="1.8s" fill="freeze"/>
+  </text>
+</svg>

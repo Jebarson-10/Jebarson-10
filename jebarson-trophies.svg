@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 120">
+  <defs>
+    <linearGradient id="trophy-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#161b22"/>
+    </linearGradient>
+    <filter id="trophy-glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="860" height="120" fill="url(#trophy-bg)" rx="10"/>
+
+  <!-- Trophy 1 — Commits -->
+  <g transform="translate(70, 60)" filter="url(#trophy-glow)">
+    <text y="-15" text-anchor="middle" font-size="28">🏆</text>
+    <text y="15" text-anchor="middle" font-family="monospace" font-size="10" fill="#ffa657" font-weight="bold">Commits</text>
+    <text y="30" text-anchor="middle" font-family="monospace" font-size="9" fill="#8b949e">A+</text>
+    <animateTransform attributeName="transform" type="translate" values="70,62;70,56;70,62" dur="3s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Trophy 2 — Stars -->
+  <g transform="translate(190, 60)" filter="url(#trophy-glow)">
+    <text y="-15" text-anchor="middle" font-size="28">🏆</text>
+    <text y="15" text-anchor="middle" font-family="monospace" font-size="10" fill="#58a6ff" font-weight="bold">Stars</text>
+    <text y="30" text-anchor="middle" font-family="monospace" font-size="9" fill="#8b949e">A</text>
+    <animateTransform attributeName="transform" type="translate" values="190,62;190,56;190,62" dur="3.3s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Trophy 3 — PRs -->
+  <g transform="translate(310, 60)" filter="url(#trophy-glow)">
+    <text y="-15" text-anchor="middle" font-size="28">🏆</text>
+    <text y="15" text-anchor="middle" font-family="monospace" font-size="10" fill="#7ee787" font-weight="bold">PRs</text>
+    <text y="30" text-anchor="middle" font-family="monospace" font-size="9" fill="#8b949e">A</text>
+    <animateTransform attributeName="transform" type="translate" values="310,62;310,56;310,62" dur="2.8s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Trophy 4 — Issues -->
+  <g transform="translate(430, 60)" filter="url(#trophy-glow)">
+    <text y="-15" text-anchor="middle" font-size="28">🏆</text>
+    <text y="15" text-anchor="middle" font-family="monospace" font-size="10" fill="#d2a8ff" font-weight="bold">Issues</text>
+    <text y="30" text-anchor="middle" font-family="monospace" font-size="9" fill="#8b949e">B+</text>
+    <animateTransform attributeName="transform" type="translate" values="430,62;430,56;430,62" dur="3.5s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Trophy 5 — Repos -->
+  <g transform="translate(550, 60)" filter="url(#trophy-glow)">
+    <text y="-15" text-anchor="middle" font-size="28">🏆</text>
+    <text y="15" text-anchor="middle" font-family="monospace" font-size="10" fill="#ff7b72" font-weight="bold">Repos</text>
+    <text y="30" text-anchor="middle" font-family="monospace" font-size="9" fill="#8b949e">A+</text>
+    <animateTransform attributeName="transform" type="translate" values="550,62;550,56;550,62" dur="4s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Trophy 6 — Followers -->
+  <g transform="translate(670, 60)" filter="url(#trophy-glow)">
+    <text y="-15" text-anchor="middle" font-size="28">🏆</text>
+    <text y="15" text-anchor="middle" font-family="monospace" font-size="10" fill="#79c0ff" font-weight="bold">Followers</text>
+    <text y="30" text-anchor="middle" font-family="monospace" font-size="9" fill="#8b949e">B</text>
+    <animateTransform attributeName="transform" type="translate" values="670,62;670,56;670,62" dur="3.2s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Trophy 7 — Experience -->
+  <g transform="translate(790, 60)" filter="url(#trophy-glow)">
+    <text y="-15" text-anchor="middle" font-size="28">🏆</text>
+    <text y="15" text-anchor="middle" font-family="monospace" font-size="10" fill="#ffa657" font-weight="bold">Exp</text>
+    <text y="30" text-anchor="middle" font-family="monospace" font-size="9" fill="#8b949e">A</text>
+    <animateTransform attributeName="transform" type="translate" values="790,62;790,56;790,62" dur="3.7s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Border glow -->
+  <rect width="860" height="120" fill="none" stroke="#58a6ff" stroke-width="1" rx="10" opacity="0.2">
+    <animate attributeName="opacity" values="0.2;0.4;0.2" dur="3s" repeatCount="indefinite"/>
+  </rect>
+</svg>
